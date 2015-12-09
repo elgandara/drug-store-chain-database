@@ -8,21 +8,22 @@ CREATE TABLE patient(
 	  city				VARCHAR(20),
 	  state				VARCHAR(20),
 	  zipcode			INT(5),
-	  primary Key(ssn)
+	  primary key(ssn)
 );
 
 DROP TABLE IF EXISTS doctor;
 CREATE TABLE doctor(
-	   ssn	 INT(8),
+	   ssn	 		INT(8),
 	   doctor_name		VARCHAR(20),
 	   specialty		VARCHAR(30),
 	   years_of_experience		INT(3),
+	   primary key(ssn)
 );
 
 DROP TABLE IF EXISTS drug;
 CREATE TABLE drug(
 	   trade_name		VARCHAR(30),
-	   formula			VARCHAR(30)
+	   formula			VARCHAR(30),
 	   primary key(trade_name)
 );
 
